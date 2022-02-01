@@ -1,0 +1,140 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .nav-link{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.navbar-toggler{
+    outline: none;
+
+}
+.bg-black{
+    background-color: black;
+}
+
+/*---------service  section--------*/
+.service-icon{
+    display: inline-block;
+    font-size: 50px;
+    margin-bottom: 16px;
+    color: #000;
+    padding: 8px 16px;
+}
+ /*=====end of service section ===*/
+ /*-------product section----*/
+ #products{
+     background: black;
+ }
+ .product-title{
+     color: #ffff;
+ }
+
+ .padding-item{
+    
+     padding-right: 10%;
+ }
+
+ .singal-item{
+     display: inline-block;
+     vertical-align: middle;
+     transform: perspective(1px) translateZ(0);
+     box-shadow: 0 0 1px rgb(0, 0, 0);
+     position: relative;
+     transition-duration: 0.3s;
+     transition-property: transform;
+     cursor: pointer;
+    
+ }
+ .singal-item:before{
+     pointer-events: none;
+     position: absolute;
+     z-index: -5;
+     content: "";
+     top: 100%;
+     left: 5%;
+     height: 10px;
+     width: 100%;
+     opacity: 0;
+     background: radial-gradient(ellipse at center,  rgba(248,248,248,248,0.35) 0%
+     rgba(247,247,247,0)80%);
+     transition-duration: 0.1s;
+     transition-property: transform, opacity;
+ }
+ .singal-item:hover,
+ .singal-item :focus,
+ .singal-item:active{
+     transform: translateY(-5px);
+ }
+ .singal-item :hover:before,
+ .singal-item:focus:before,
+ .singal-item :active :before{
+     opacity: 1;
+     transform: translateY(5px);
+ }
+ .img-container{
+     position: relative;
+     overflow: hidden;
+     cursor: pointer;
+ }
+ .img-container{
+     display: inline-block;
+     vertical-align: middle;
+     transform: translateY();
+ }
+ 
+ /*========end of product section=====*/
+ a.animated-button.thar-two {
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #F7CA18;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+a.animated-button.thar-two:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: ntwo;
+}
+a.animated-button.thar-two:hover:before {
+	top: 0%;
+	bottom: auto;
+	height: 100%;
+}
+a.animated-button.thar-two:before {
+	display: block;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	height: 0px;
+	width: 100%;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #f3e521;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
